@@ -26,3 +26,11 @@ elif user_action == "scissors":
         print("Scissors cuts paper! You win!")
     else:
         print("Rock smashes scissors! You lose.")
+            else:
+        print("Invalid input! Please enter rock, paper, or scissors.")
+        continue  # Restart the loop if input is invalid
+
+    play_again = input("\nDo you want to play again? (y/n): ").lower()
+    if play_again != "y":
+        print("Thanks for playing!")
+        break
